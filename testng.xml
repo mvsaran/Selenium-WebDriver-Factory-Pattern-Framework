@@ -1,0 +1,28 @@
+
+<suite name="SauceDemo-Factory-Suite" parallel="tests" thread-count="2">
+
+    <!-- Chrome Tests -->
+    <test name="ChromeSuite">
+        <parameter name="browser" value="chrome"/>
+        <parameter name="appUrl" value="https://www.saucedemo.com/"/>
+        <parameter name="user" value="standard_user"/>
+        <parameter name="pass" value="secret_sauce"/>
+        <classes>
+            <class name="tests.LoginTest"/>
+            <class name="tests.AddToCartTest"/>
+        </classes>
+    </test>
+
+    <!-- Firefox Tests -->
+    <test name="FirefoxSuite">
+        <parameter name="browser" value="firefox"/>
+        <parameter name="appUrl" value="https://www.saucedemo.com/"/>
+        <parameter name="user" value="standard_user"/>
+        <parameter name="pass" value="secret_sauce"/>
+        <classes>
+            <class name="tests.LoginTest"/>
+            
+        </classes>
+    </test>
+
+</suite>

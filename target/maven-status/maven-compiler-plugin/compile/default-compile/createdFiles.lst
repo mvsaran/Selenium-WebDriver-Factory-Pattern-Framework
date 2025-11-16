@@ -1,0 +1,4 @@
+factory\DriverManager.class
+pages\InventoryPage.class
+pages\LoginPage.class
+factory\DriverFactory.class
